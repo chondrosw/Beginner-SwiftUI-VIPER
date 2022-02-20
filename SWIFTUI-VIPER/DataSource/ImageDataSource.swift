@@ -55,6 +55,21 @@ class PixbayImageDataProvider:ImageDataProvider{
             .eraseToAnyPublisher()
     }
     func getEndImages(for trip: Trip) -> AnyPublisher<[UIImage], Never> {
-        <#code#>
+        if trip.waypoints.count == 0{
+            return Empty<[UIImage],Never>().eraseToAnyPublisher()
+        }
+        if trip.waypoints.count == 1{
+            return imageForQuery(query: trip.waypoints[0].name)
+                .map{[$0]}
+                .receive(on: DispatchQueue.main)
+                .eraseToAnyPublisher()
+        }
+        let start = imageForQuery(query: trip.waypoints[0].name)
+        let end = imageForQuery(query: trip.waypoints.last!.name)
+        
+        return Publishers.Merge(start,end)
+            .collect()
+            .receive(on:DispatchQueue.main)
+            .eraseToAnyPublisher()
     }
 }
