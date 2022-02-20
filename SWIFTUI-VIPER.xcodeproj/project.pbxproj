@@ -16,6 +16,12 @@
 		4D3FC12B27C1957000FAF99D /* SWIFTUI_VIPERTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3FC12A27C1957000FAF99D /* SWIFTUI_VIPERTests.swift */; };
 		4D3FC13527C1957100FAF99D /* SWIFTUI_VIPERUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3FC13427C1957100FAF99D /* SWIFTUI_VIPERUITests.swift */; };
 		4D3FC13727C1957100FAF99D /* SWIFTUI_VIPERUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3FC13627C1957100FAF99D /* SWIFTUI_VIPERUITestsLaunchTests.swift */; };
+		4D3FC14C27C22BE800FAF99D /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3FC14B27C22BE800FAF99D /* DataModel.swift */; };
+		4D3FC14E27C22C2A00FAF99D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3FC14D27C22C2A00FAF99D /* Persistence.swift */; };
+		4D3FC15027C22D5C00FAF99D /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3FC14F27C22D5C00FAF99D /* Trip.swift */; };
+		4D3FC15227C22E6300FAF99D /* WayPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3FC15127C22E6300FAF99D /* WayPoint.swift */; };
+		4D3FC15427C22F8600FAF99D /* MapDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3FC15327C22F8600FAF99D /* MapDataSource.swift */; };
+		4D3FC15627C24E9800FAF99D /* ImageDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3FC15527C24E9800FAF99D /* ImageDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +54,12 @@
 		4D3FC13027C1957100FAF99D /* SWIFTUI-VIPERUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SWIFTUI-VIPERUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D3FC13427C1957100FAF99D /* SWIFTUI_VIPERUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWIFTUI_VIPERUITests.swift; sourceTree = "<group>"; };
 		4D3FC13627C1957100FAF99D /* SWIFTUI_VIPERUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWIFTUI_VIPERUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4D3FC14B27C22BE800FAF99D /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		4D3FC14D27C22C2A00FAF99D /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		4D3FC14F27C22D5C00FAF99D /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		4D3FC15127C22E6300FAF99D /* WayPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WayPoint.swift; sourceTree = "<group>"; };
+		4D3FC15327C22F8600FAF99D /* MapDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDataSource.swift; sourceTree = "<group>"; };
+		4D3FC15527C24E9800FAF99D /* ImageDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +110,9 @@
 		4D3FC11327C1956F00FAF99D /* SWIFTUI-VIPER */ = {
 			isa = PBXGroup;
 			children = (
+				4D3FC14A27C22BCF00FAF99D /* Entities */,
+				4D3FC14927C22BBC00FAF99D /* DataSource */,
+				4D3FC14327C217A300FAF99D /* Module */,
 				4D3FC11427C1956F00FAF99D /* SWIFTUI_VIPERApp.swift */,
 				4D3FC11627C1956F00FAF99D /* ContentView.swift */,
 				4D3FC11827C1957000FAF99D /* Assets.xcassets */,
@@ -131,6 +146,73 @@
 				4D3FC13627C1957100FAF99D /* SWIFTUI_VIPERUITestsLaunchTests.swift */,
 			);
 			path = "SWIFTUI-VIPERUITests";
+			sourceTree = "<group>";
+		};
+		4D3FC14327C217A300FAF99D /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				4D3FC14427C22B8000FAF99D /* TripListModule */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		4D3FC14427C22B8000FAF99D /* TripListModule */ = {
+			isa = PBXGroup;
+			children = (
+				4D3FC14827C22B9E00FAF99D /* Router */,
+				4D3FC14727C22B9700FAF99D /* View */,
+				4D3FC14627C22B9200FAF99D /* Presenter */,
+				4D3FC14527C22B8B00FAF99D /* Interactor */,
+			);
+			path = TripListModule;
+			sourceTree = "<group>";
+		};
+		4D3FC14527C22B8B00FAF99D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		4D3FC14627C22B9200FAF99D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		4D3FC14727C22B9700FAF99D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4D3FC14827C22B9E00FAF99D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		4D3FC14927C22BBC00FAF99D /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				4D3FC14D27C22C2A00FAF99D /* Persistence.swift */,
+				4D3FC15327C22F8600FAF99D /* MapDataSource.swift */,
+				4D3FC15527C24E9800FAF99D /* ImageDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		4D3FC14A27C22BCF00FAF99D /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				4D3FC14B27C22BE800FAF99D /* DataModel.swift */,
+				4D3FC14F27C22D5C00FAF99D /* Trip.swift */,
+				4D3FC15127C22E6300FAF99D /* WayPoint.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,9 +345,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D3FC14C27C22BE800FAF99D /* DataModel.swift in Sources */,
+				4D3FC15427C22F8600FAF99D /* MapDataSource.swift in Sources */,
 				4D3FC11E27C1957000FAF99D /* Persistence.swift in Sources */,
 				4D3FC11727C1956F00FAF99D /* ContentView.swift in Sources */,
+				4D3FC15627C24E9800FAF99D /* ImageDataSource.swift in Sources */,
+				4D3FC14E27C22C2A00FAF99D /* Persistence.swift in Sources */,
+				4D3FC15227C22E6300FAF99D /* WayPoint.swift in Sources */,
 				4D3FC12127C1957000FAF99D /* SWIFTUI_VIPER.xcdatamodeld in Sources */,
+				4D3FC15027C22D5C00FAF99D /* Trip.swift in Sources */,
 				4D3FC11527C1956F00FAF99D /* SWIFTUI_VIPERApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
