@@ -11,7 +11,7 @@ import SwiftUI
 
 class TripListPresenter:ObservableObject{
     private let interactor:TripListInteractor
-    
+    private let router = TripListRouter()
     private var cancellables = Set<AnyCancellable>()
     
     @Published var trips:[Trip] = []
@@ -36,7 +36,7 @@ class TripListPresenter:ObservableObject{
         interactor.addNewTrip()
     }
     
-//    func linkBuilder<Content:View>(for trip:Trip,@ViewBuilder content: ()->Content)-> some View{
-//
-//    }
+    func linkBuilder<Content:View>(for trip:Trip,@ViewBuilder content: ()->Content)-> some View{
+        NavigationLink(destination:router.makeDetailView(for: trip, model: interactor.model), label: {content()})
+    }
 }
