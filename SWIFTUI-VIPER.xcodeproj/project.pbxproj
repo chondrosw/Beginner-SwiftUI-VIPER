@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D3A7B7527C3960E0047711D /* TripListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3A7B7427C3960E0047711D /* TripListCell.swift */; };
+		4D3A7B7727C39D980047711D /* TripListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3A7B7627C39D980047711D /* TripListView.swift */; };
+		4D3A7B7B27C3CB0C0047711D /* WaypointViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3A7B7A27C3CB0C0047711D /* WaypointViewInteractor.swift */; };
+		4D3A7B7D27C3CB1A0047711D /* WaypointViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3A7B7C27C3CB1A0047711D /* WaypointViewPresenter.swift */; };
+		4D3A7B7F27C3CB250047711D /* WaypointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3A7B7E27C3CB250047711D /* WaypointView.swift */; };
 		4D3FC11527C1956F00FAF99D /* SWIFTUI_VIPERApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3FC11427C1956F00FAF99D /* SWIFTUI_VIPERApp.swift */; };
 		4D3FC11727C1956F00FAF99D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3FC11627C1956F00FAF99D /* ContentView.swift */; };
 		4D3FC11927C1957000FAF99D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D3FC11827C1957000FAF99D /* Assets.xcassets */; };
@@ -26,7 +31,6 @@
 		4DF1A38427C2AB1900666EF4 /* TripListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF1A38327C2AB1900666EF4 /* TripListRouter.swift */; };
 		4DF1A38727C2ADF900666EF4 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF1A38627C2ADF900666EF4 /* MapView.swift */; };
 		4DF1A38927C2B6AF00666EF4 /* SplitImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF1A38827C2B6AF00666EF4 /* SplitImage.swift */; };
-		4DF1A38B27C2B70E00666EF4 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4DF1A38A27C2B70E00666EF4 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D3A7B7427C3960E0047711D /* TripListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListCell.swift; sourceTree = "<group>"; };
+		4D3A7B7627C39D980047711D /* TripListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListView.swift; sourceTree = "<group>"; };
+		4D3A7B7A27C3CB0C0047711D /* WaypointViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaypointViewInteractor.swift; sourceTree = "<group>"; };
+		4D3A7B7C27C3CB1A0047711D /* WaypointViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaypointViewPresenter.swift; sourceTree = "<group>"; };
+		4D3A7B7E27C3CB250047711D /* WaypointView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaypointView.swift; sourceTree = "<group>"; };
 		4D3FC11127C1956F00FAF99D /* SWIFTUI-VIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SWIFTUI-VIPER.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D3FC11427C1956F00FAF99D /* SWIFTUI_VIPERApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWIFTUI_VIPERApp.swift; sourceTree = "<group>"; };
 		4D3FC11627C1956F00FAF99D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -70,7 +79,6 @@
 		4DF1A38327C2AB1900666EF4 /* TripListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListRouter.swift; sourceTree = "<group>"; };
 		4DF1A38627C2ADF900666EF4 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		4DF1A38827C2B6AF00666EF4 /* SplitImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitImage.swift; sourceTree = "<group>"; };
-		4DF1A38A27C2B70E00666EF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +106,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D3A7B7827C3AAE10047711D /* WayPointModule */ = {
+			isa = PBXGroup;
+			children = (
+				4D3A7B7A27C3CB0C0047711D /* WaypointViewInteractor.swift */,
+				4D3A7B7C27C3CB1A0047711D /* WaypointViewPresenter.swift */,
+				4D3A7B7E27C3CB250047711D /* WaypointView.swift */,
+			);
+			path = WayPointModule;
+			sourceTree = "<group>";
+		};
+		4D3A7B7927C3AAEA0047711D /* TripDetailModule */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TripDetailModule;
+			sourceTree = "<group>";
+		};
 		4D3FC10827C1956F00FAF99D = {
 			isa = PBXGroup;
 			children = (
@@ -131,7 +156,6 @@
 				4D3FC11D27C1957000FAF99D /* Persistence.swift */,
 				4D3FC11F27C1957000FAF99D /* SWIFTUI_VIPER.xcdatamodeld */,
 				4D3FC11A27C1957000FAF99D /* Preview Content */,
-				4DF1A38A27C2B70E00666EF4 /* Info.plist */,
 			);
 			path = "SWIFTUI-VIPER";
 			sourceTree = "<group>";
@@ -164,6 +188,8 @@
 		4D3FC14327C217A300FAF99D /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				4D3A7B7927C3AAEA0047711D /* TripDetailModule */,
+				4D3A7B7827C3AAE10047711D /* WayPointModule */,
 				4D3FC14427C22B8000FAF99D /* TripListModule */,
 			);
 			path = Module;
@@ -199,6 +225,7 @@
 		4D3FC14727C22B9700FAF99D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4D3A7B7627C39D980047711D /* TripListView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -236,6 +263,7 @@
 			children = (
 				4DF1A38627C2ADF900666EF4 /* MapView.swift */,
 				4DF1A38827C2B6AF00666EF4 /* SplitImage.swift */,
+				4D3A7B7427C3960E0047711D /* TripListCell.swift */,
 			);
 			path = ViewHelper;
 			sourceTree = "<group>";
@@ -344,7 +372,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DF1A38B27C2B70E00666EF4 /* Info.plist in Resources */,
 				4D3FC11927C1957000FAF99D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,9 +405,14 @@
 				4D3FC15627C24E9800FAF99D /* ImageDataSource.swift in Sources */,
 				4DF1A38427C2AB1900666EF4 /* TripListRouter.swift in Sources */,
 				4D3FC14E27C22C2A00FAF99D /* PersistenceData.swift in Sources */,
+				4D3A7B7527C3960E0047711D /* TripListCell.swift in Sources */,
+				4D3A7B7D27C3CB1A0047711D /* WaypointViewPresenter.swift in Sources */,
+				4D3A7B7727C39D980047711D /* TripListView.swift in Sources */,
 				4DF1A38727C2ADF900666EF4 /* MapView.swift in Sources */,
 				4D3FC15227C22E6300FAF99D /* WayPoint.swift in Sources */,
+				4D3A7B7B27C3CB0C0047711D /* WaypointViewInteractor.swift in Sources */,
 				4D3FC12127C1957000FAF99D /* SWIFTUI_VIPER.xcdatamodeld in Sources */,
+				4D3A7B7F27C3CB250047711D /* WaypointView.swift in Sources */,
 				4DF1A38027C2A98C00666EF4 /* TripListIneractor.swift in Sources */,
 				4DF1A38227C2A9F500666EF4 /* TripListPresenter.swift in Sources */,
 				4D3FC15027C22D5C00FAF99D /* Trip.swift in Sources */,

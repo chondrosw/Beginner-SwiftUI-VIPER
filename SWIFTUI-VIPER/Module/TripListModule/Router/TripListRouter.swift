@@ -9,6 +9,6 @@ import SwiftUI
 
 class TripListRouter{
 //    func makeDetailView(for trip:Trip,mode:DataModel)-> some View{
-//        
+////        let presenter = TripListPresenter(interactor: )
 //    }
 }

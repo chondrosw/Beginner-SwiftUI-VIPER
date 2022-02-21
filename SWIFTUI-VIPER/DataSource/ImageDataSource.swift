@@ -24,13 +24,13 @@ class PixbayImageDataProvider:ImageDataProvider{
     let apikey = "25789217-880a8d8eda9741bbdae90f70e"
     
     private func searchURL(query:String)->URL{
-        var components = URLComponents(string: "https://pixabay.com/api")
-        components?.queryItems = [
+        var components = URLComponents(string: "https://pixabay.com/api")!
+        components.queryItems = [
         URLQueryItem(name: "key", value: apikey),
         URLQueryItem(name: "q", value: query),
         URLQueryItem(name: "image_type", value: "photo")
         ]
-        return (components?.url!)!
+        return components.url!
     }
     
     private func imageForQuery(query:String)-> AnyPublisher<UIImage,Never>{
@@ -38,6 +38,7 @@ class PixbayImageDataProvider:ImageDataProvider{
             .map{$0.data}
             .decode(type: PixabayResponse.self, decoder: JSONDecoder())
             .tryMap{response -> URL in
+                
                 guard let urlString = response.hits.first?.largeImageURL,
                       let url = URL(string: urlString) else{
                           throw CustomErrors.noData

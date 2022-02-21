@@ -23,13 +23,17 @@ class TripListPresenter:ObservableObject{
     }
     
     func makeAddNewButton() -> some View{
-        Button(action: {}) {
+        Button(action: addNewTrip) {
             Image(systemName: "plus")
         }
     }
     
     func deleteTrip(_ index:IndexSet){
         interactor.deleteTrip(index)
+    }
+    
+    func addNewTrip(){
+        interactor.addNewTrip()
     }
     
 //    func linkBuilder<Content:View>(for trip:Trip,@ViewBuilder content: ()->Content)-> some View{
