@@ -12,6 +12,12 @@
 		4D3A7B7B27C3CB0C0047711D /* WaypointViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3A7B7A27C3CB0C0047711D /* WaypointViewInteractor.swift */; };
 		4D3A7B7D27C3CB1A0047711D /* WaypointViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3A7B7C27C3CB1A0047711D /* WaypointViewPresenter.swift */; };
 		4D3A7B7F27C3CB250047711D /* WaypointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3A7B7E27C3CB250047711D /* WaypointView.swift */; };
+		4D3A7B8127C432D10047711D /* TripDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3A7B8027C432D10047711D /* TripDetailInteractor.swift */; };
+		4D3A7B8327C432DF0047711D /* TripDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3A7B8227C432DF0047711D /* TripDetailPresenter.swift */; };
+		4D3A7B8527C432ED0047711D /* TripDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3A7B8427C432EC0047711D /* TripDetailView.swift */; };
+		4D3A7B8727C432F80047711D /* TripMapViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3A7B8627C432F80047711D /* TripMapViewPresenter.swift */; };
+		4D3A7B8927C4330F0047711D /* TripMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3A7B8827C4330F0047711D /* TripMapView.swift */; };
+		4D3A7B8B27C433190047711D /* TripDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3A7B8A27C433190047711D /* TripDetailRouter.swift */; };
 		4D3FC11527C1956F00FAF99D /* SWIFTUI_VIPERApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3FC11427C1956F00FAF99D /* SWIFTUI_VIPERApp.swift */; };
 		4D3FC11727C1956F00FAF99D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3FC11627C1956F00FAF99D /* ContentView.swift */; };
 		4D3FC11927C1957000FAF99D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D3FC11827C1957000FAF99D /* Assets.xcassets */; };
@@ -56,6 +62,12 @@
 		4D3A7B7A27C3CB0C0047711D /* WaypointViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaypointViewInteractor.swift; sourceTree = "<group>"; };
 		4D3A7B7C27C3CB1A0047711D /* WaypointViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaypointViewPresenter.swift; sourceTree = "<group>"; };
 		4D3A7B7E27C3CB250047711D /* WaypointView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaypointView.swift; sourceTree = "<group>"; };
+		4D3A7B8027C432D10047711D /* TripDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetailInteractor.swift; sourceTree = "<group>"; };
+		4D3A7B8227C432DF0047711D /* TripDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetailPresenter.swift; sourceTree = "<group>"; };
+		4D3A7B8427C432EC0047711D /* TripDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetailView.swift; sourceTree = "<group>"; };
+		4D3A7B8627C432F80047711D /* TripMapViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripMapViewPresenter.swift; sourceTree = "<group>"; };
+		4D3A7B8827C4330F0047711D /* TripMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripMapView.swift; sourceTree = "<group>"; };
+		4D3A7B8A27C433190047711D /* TripDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetailRouter.swift; sourceTree = "<group>"; };
 		4D3FC11127C1956F00FAF99D /* SWIFTUI-VIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SWIFTUI-VIPER.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D3FC11427C1956F00FAF99D /* SWIFTUI_VIPERApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWIFTUI_VIPERApp.swift; sourceTree = "<group>"; };
 		4D3FC11627C1956F00FAF99D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -119,8 +131,22 @@
 		4D3A7B7927C3AAEA0047711D /* TripDetailModule */ = {
 			isa = PBXGroup;
 			children = (
+				4D3A7B8C27C4354D0047711D /* TripMap */,
+				4D3A7B8027C432D10047711D /* TripDetailInteractor.swift */,
+				4D3A7B8227C432DF0047711D /* TripDetailPresenter.swift */,
+				4D3A7B8427C432EC0047711D /* TripDetailView.swift */,
+				4D3A7B8A27C433190047711D /* TripDetailRouter.swift */,
 			);
 			path = TripDetailModule;
+			sourceTree = "<group>";
+		};
+		4D3A7B8C27C4354D0047711D /* TripMap */ = {
+			isa = PBXGroup;
+			children = (
+				4D3A7B8627C432F80047711D /* TripMapViewPresenter.swift */,
+				4D3A7B8827C4330F0047711D /* TripMapView.swift */,
+			);
+			path = TripMap;
 			sourceTree = "<group>";
 		};
 		4D3FC10827C1956F00FAF99D = {
@@ -397,7 +423,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D3A7B8B27C433190047711D /* TripDetailRouter.swift in Sources */,
 				4D3FC14C27C22BE800FAF99D /* DataModel.swift in Sources */,
+				4D3A7B8927C4330F0047711D /* TripMapView.swift in Sources */,
 				4D3FC15427C22F8600FAF99D /* MapDataSource.swift in Sources */,
 				4D3FC11E27C1957000FAF99D /* Persistence.swift in Sources */,
 				4DF1A38927C2B6AF00666EF4 /* SplitImage.swift in Sources */,
@@ -409,12 +437,16 @@
 				4D3A7B7D27C3CB1A0047711D /* WaypointViewPresenter.swift in Sources */,
 				4D3A7B7727C39D980047711D /* TripListView.swift in Sources */,
 				4DF1A38727C2ADF900666EF4 /* MapView.swift in Sources */,
+				4D3A7B8327C432DF0047711D /* TripDetailPresenter.swift in Sources */,
 				4D3FC15227C22E6300FAF99D /* WayPoint.swift in Sources */,
+				4D3A7B8127C432D10047711D /* TripDetailInteractor.swift in Sources */,
 				4D3A7B7B27C3CB0C0047711D /* WaypointViewInteractor.swift in Sources */,
 				4D3FC12127C1957000FAF99D /* SWIFTUI_VIPER.xcdatamodeld in Sources */,
+				4D3A7B8527C432ED0047711D /* TripDetailView.swift in Sources */,
 				4D3A7B7F27C3CB250047711D /* WaypointView.swift in Sources */,
 				4DF1A38027C2A98C00666EF4 /* TripListIneractor.swift in Sources */,
 				4DF1A38227C2A9F500666EF4 /* TripListPresenter.swift in Sources */,
+				4D3A7B8727C432F80047711D /* TripMapViewPresenter.swift in Sources */,
 				4D3FC15027C22D5C00FAF99D /* Trip.swift in Sources */,
 				4D3FC11527C1956F00FAF99D /* SWIFTUI_VIPERApp.swift in Sources */,
 			);
